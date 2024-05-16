@@ -34,22 +34,35 @@ body {
     text-align: center;
     line-height: 25px;
     position: relative;
+    display: flex; /* Add display flex */
+    justify-content: flex-start; /* Align buttons to the left */
+    align-items: center;
+}
+
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px; /* Add margin between buttons */
+    margin-left: 5px;
 }
 
 .red-button {
     background-color: #d63a3a;
-    height: 12.5px;
-    width: 12.5px;
-    border-radius: 50%;
-    position: absolute;
-    left: 12.5px;
-    top: 6px;
+}
+
+.yellow-button {
+    background-color: #dcca4e;
+}
+
+.green-button {
+    background-color: #4cd941;
 }
 
 .title {
     color: white;
-    display: inline-block;
-    margin-left: 24px; /* Adjust as needed */
+    margin-left: auto; /* Add margin between buttons and title */
+    margin-right: auto;
 }
 
 .terminal-body {
@@ -58,10 +71,10 @@ body {
     overflow: auto;
     flex-grow: 1; /* Allow terminal body to expand to fill remaining space */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Center text content */
+    justify-content: left;
+    text-align: left; /* Center text content */
 }
+
 
 
 
